@@ -42,17 +42,18 @@ interval = setInterval(function(){
 
 function stopSlider(){
 	clearInterval(interval);
+  return false;
 }
 
 $('#play').on('click', function(){
-	$(this).css("color",'green');
+	$(this).css("color",'green').hide();
 	$('.pause').css("color","white");
 	startSlider();
 });
 
 $('#stop').on('click', function(){
 	$(this).css("color","red");
-	$('.play').css("color","white");
+	$('.play').css("color","white").show();
 	stopSlider();
 });
 
