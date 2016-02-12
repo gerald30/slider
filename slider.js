@@ -47,13 +47,13 @@ function stopSlider(){
 
 $('#play').on('click', function(){
 	$(this).css("color",'green').hide();
-	$('.pause').css("color","white");
+	$('.pause').css("color","black");
 	startSlider();
 });
 
 $('#stop').on('click', function(){
 	$(this).css("color","red");
-	$('.play').css("color","white").show();
+	$('.play').css("color","black").show();
 	stopSlider();
 });
 

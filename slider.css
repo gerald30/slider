@@ -42,8 +42,8 @@
 
 	position: relative;
 	width: 720px;
-	background: black;
-	color: white;
+	background: white;
+
 }
 .pause{
 	margin: 0;
@@ -56,7 +56,6 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	color: #fff;
 	cursor: pointer;
 	transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
