@@ -9,7 +9,6 @@ var $slideContainer = $slider.find('.slides');
 var $slides = $slideContainer.find('.slide');
 var interval;
 
-
 function preview(){
 	$slideContainer.animate({'margin-left':'+='+width}, function(){
 			currentSLide--;
@@ -47,13 +46,13 @@ function stopSlider(){
 
 $('#play').on('click', function(){
 	$(this).css("color",'green').hide();
-	$('.pause').css("color","black");
+	$('.pause').css("color","green");
 	startSlider();
 });
 
 $('#stop').on('click', function(){
 	$(this).css("color","red");
-	$('.play').css("color","black").show();
+	$('.play').css("color","green").show();
 	stopSlider();
 });
 
